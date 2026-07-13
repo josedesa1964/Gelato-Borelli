@@ -140,34 +140,10 @@
     </div>
     <div>
       <h1>Dashboard Cliente Oculto</h1>
-      <div class="sub">Análise consolidada — 19 unidades auditadas &nbsp;|&nbsp; Tailler / Alimentarum</div>
+      <div class="sub">Análise consolidada — 46 unidades auditadas &nbsp;|&nbsp; Tailler / Alimentarum</div>
     </div>
   </div>
-  <div style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">
-    <!-- Tailler Logo SVG (fiel ao original) -->
-    <svg viewBox="0 0 178 68" width="164" height="62" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <linearGradient id="tg" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#c04608"/>
-          <stop offset="100%" stop-color="#f2ac18"/>
-        </linearGradient>
-      </defs>
-      <!-- Folha esquerda (elipse rotacionada) -->
-      <ellipse cx="28" cy="17" rx="4" ry="9.5" transform="rotate(-22 28 17)" fill="#8aab7a"/>
-      <!-- Folha direita (elipse rotacionada) -->
-      <ellipse cx="38" cy="17" rx="4" ry="9.5" transform="rotate(22 38 17)" fill="#8aab7a"/>
-      <!-- Arco laranja: sweep-flag=0 = CCW = vai pelo TOPO = domo ✓ -->
-      <path d="M7,47 A26,26 0 0 0 59,47" fill="none" stroke="url(#tg)" stroke-width="13" stroke-linecap="round"/>
-      <!-- Asa esquerda (branca — azul-escuro no original) -->
-      <path d="M7,52 C0,65 3,77 16,78 C24,78 30,69 33,60 C21,61 10,59 7,52Z" fill="white" opacity="0.9"/>
-      <!-- Asa direita (branca — azul-escuro no original) -->
-      <path d="M59,52 C66,65 63,77 50,78 C42,78 36,69 33,60 C45,61 56,59 59,52Z" fill="white" opacity="0.9"/>
-      <!-- Texto "Tailler" em duas linhas, branco -->
-      <text x="76" y="37" font-family="'Segoe UI',Tahoma,sans-serif" font-size="25" font-weight="700" fill="white" letter-spacing="-0.5">Tai</text>
-      <text x="76" y="64" font-family="'Segoe UI',Tahoma,sans-serif" font-size="25" font-weight="700" fill="white" letter-spacing="-0.5">ller</text>
-    </svg>
-    <div style="font-size:.72rem;opacity:.5;text-align:right">Período: Maio – Junho 2026 · 19 unidades</div>
-  </div>
+  <div class="period">Período: Maio – Julho 2026<br><span style="opacity:.55">46 relatórios · 46 unidades</span></div>
 </header>
 
 <div class="container">
@@ -175,28 +151,28 @@
   <div class="kpi-grid">
     <div class="kpi kpi-default" data-icon="🏪">
       <div class="kpi-label">Unidades Avaliadas</div>
-      <div class="kpi-value">19</div>
-      <div class="kpi-sub">8 Lojas de Rua · 11 Lojas Shopping</div>
+      <div class="kpi-value">46</div>
+      <div class="kpi-sub">20 Lojas de Rua · 26 Lojas Shopping</div>
     </div>
     <div class="kpi kpi-default" data-icon="📊">
       <div class="kpi-label">Nota Média Geral</div>
-      <div class="kpi-value" style="color:var(--regular)">74,9</div>
+      <div class="kpi-value" style="color:var(--regular)">72,6</div>
       <div class="kpi-sub">Classificação: <strong>REGULAR</strong></div>
     </div>
     <div class="kpi bom" data-icon="✅">
       <div class="kpi-label">BOM (≥ 80)</div>
-      <div class="kpi-value">7</div>
-      <div class="kpi-sub">36,8% das unidades</div>
+      <div class="kpi-value">18</div>
+      <div class="kpi-sub">39,1% das unidades</div>
     </div>
     <div class="kpi regular" data-icon="⚠️">
       <div class="kpi-label">REGULAR (60–79)</div>
-      <div class="kpi-value">10</div>
-      <div class="kpi-sub">52,6% das unidades</div>
+      <div class="kpi-value">20</div>
+      <div class="kpi-sub">43,5% das unidades</div>
     </div>
     <div class="kpi ruim" data-icon="🚨">
       <div class="kpi-label">RUIM / RISCO (≤ 59)</div>
-      <div class="kpi-value">2</div>
-      <div class="kpi-sub">10,5% — requer ação</div>
+      <div class="kpi-value">8</div>
+      <div class="kpi-sub">17,4% — requer ação</div>
     </div>
   </div>
 
@@ -227,9 +203,9 @@
       <div class="card-title">Distribuição por Classificação</div>
       <div class="chart-wrap" style="height:190px"><canvas id="donutChart"></canvas></div>
       <div class="legend">
-        <div class="legend-item"><span><span class="legend-dot" style="background:var(--bom)"></span>BOM (≥ 80)</span><strong style="color:var(--bom)">7 — 36,8%</strong></div>
-        <div class="legend-item"><span><span class="legend-dot" style="background:var(--regular)"></span>REGULAR (60–79)</span><strong style="color:var(--regular)">10 — 52,6%</strong></div>
-        <div class="legend-item"><span><span class="legend-dot" style="background:var(--ruim)"></span>RUIM (30–59)</span><strong style="color:var(--ruim)">2 — 10,5%</strong></div>
+        <div class="legend-item"><span><span class="legend-dot" style="background:var(--bom)"></span>BOM (≥ 80)</span><strong style="color:var(--bom)">18 — 39,1%</strong></div>
+        <div class="legend-item"><span><span class="legend-dot" style="background:var(--regular)"></span>REGULAR (60–79)</span><strong style="color:var(--regular)">20 — 43,5%</strong></div>
+        <div class="legend-item"><span><span class="legend-dot" style="background:var(--ruim)"></span>RUIM (30–59)</span><strong style="color:var(--ruim)">8 — 17,4%</strong></div>
         <div class="legend-item"><span><span class="legend-dot" style="background:var(--inaceitavel)"></span>INACEITÁVEL (0–29)</span><strong style="color:#bbb">0 lojas</strong></div>
       </div>
     </div>
@@ -244,10 +220,10 @@
       <div class="card-title">Desempenho por Tipo de Unidade</div>
       <div class="chart-wrap" style="height:175px"><canvas id="typeChart"></canvas></div>
       <div class="highlights">
-        <div class="hl-box best"><div class="hl-tag">🥇 Melhor unidade</div><div class="hl-name" style="color:var(--bom)">Matão/SP</div><div class="hl-sub">Nota 94 · BOM · Loja de Rua</div></div>
-        <div class="hl-box worst"><div class="hl-tag">⚠️ Pior unidade</div><div class="hl-name" style="color:var(--ruim)">Limeira (Rua)</div><div class="hl-sub">Nota 53 · RUIM · Loja de Rua</div></div>
-        <div class="hl-box best"><div class="hl-tag">🏆 Top Lojas Shopping</div><div class="hl-name" style="color:var(--bom)">Ribeirão Sh. e Aracajú</div><div class="hl-sub">Nota 84 · BOM · empatadas</div></div>
-        <div class="hl-box worst"><div class="hl-tag">📉 Menor nota — Shopping</div><div class="hl-name" style="color:var(--ruim)">Shopping Continente</div><div class="hl-sub">Nota 63 · REGULAR</div></div>
+        <div class="hl-box best"><div class="hl-tag">🥇 Melhores unidades</div><div class="hl-name" style="color:var(--bom)">Matão/SP e Itapetininga/SP</div><div class="hl-sub">Nota 94 · BOM · Loja de Rua</div></div>
+        <div class="hl-box worst"><div class="hl-tag">⚠️ Pior unidade</div><div class="hl-name" style="color:var(--ruim)">Piracicaba/SP</div><div class="hl-sub">Nota 35 · RUIM · Loja de Rua</div></div>
+        <div class="hl-box best"><div class="hl-tag">🏆 Top Lojas Shopping</div><div class="hl-name" style="color:var(--bom)">Palmas/TO e Porto Velho/RO</div><div class="hl-sub">Nota 87 · BOM · empatadas</div></div>
+        <div class="hl-box worst"><div class="hl-tag">📉 Menor nota — Shopping</div><div class="hl-name" style="color:var(--ruim)">Shopping Piracicaba</div><div class="hl-sub">Nota 46 · RUIM</div></div>
       </div>
     </div>
   </div>
@@ -264,7 +240,7 @@
   </div>
 
   <div class="card">
-    <div class="card-title">Detalhamento Completo — 19 Unidades <span class="clickable-hint">— clique em qualquer linha para ver detalhes</span></div>
+    <div class="card-title">Detalhamento Completo — 46 Unidades <span class="clickable-hint">— clique em qualquer linha para ver detalhes</span></div>
     <div class="table-wrap">
       <table>
         <thead>
@@ -286,7 +262,9 @@
 
 </div>
 
-<footer>Dashboard gerado a partir de 19 relatórios de Cliente Oculto — Gelato Borelli &nbsp;|&nbsp; Tailler / Alimentarum &nbsp;|&nbsp; Período: Maio–Junho 2026</footer>
+<footer>
+  <span>Dashboard gerado a partir de 46 relatórios de Cliente Oculto — Gelato Borelli &nbsp;|&nbsp; Tailler / Alimentarum &nbsp;|&nbsp; Período: Maio–Julho 2026</span>
+</footer>
 
 <!-- MODAL -->
 <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
@@ -313,25 +291,52 @@
 // DATA
 // ═══════════════════════════════════════════════════════════
 const stores = [
-  { name:"Matão/SP",                       score:94, type:"Loja de Rua",   date:"08/06/2026", ts:20260608 },
-  { name:"Novo Shopping",                  score:90, type:"Loja de Rua",   date:"03/06/2026", ts:20260603 },
-  { name:"Neumarkt (Blumenau/SC)",         score:87, type:"Loja de Rua",   date:"11/06/2026", ts:20260611 },
-  { name:"Ribeirão Shopping/SP",           score:84, type:"Loja Shopping", date:"13/06/2026", ts:20260613 },
-  { name:"Shopping Jardins Aracajú/SE",    score:84, type:"Loja Shopping", date:"16/06/2026", ts:20260616 },
-  { name:"Mogi das Cruzes/SP",             score:83, type:"Loja Shopping", date:"15/06/2026", ts:20260615 },
-  { name:"Jaú/SP",                         score:80, type:"Loja Shopping", date:"08/06/2026", ts:20260608 },
-  { name:"Jundiaí Shopping",              score:77, type:"Loja Shopping", date:"10/06/2026", ts:20260610 },
-  { name:"Garten Shopping (Joinville/SC)", score:77, type:"Loja Shopping", date:"10/06/2026", ts:20260610 },
-  { name:"Iguatemi Ribeirão Preto/SP",     score:76, type:"Loja Shopping", date:"14/06/2026", ts:20260614 },
-  { name:"Super Shopping Osasco",          score:73, type:"Loja de Rua",   date:"02/06/2026", ts:20260602 },
-  { name:"Anália Franco",                  score:72, type:"Loja Shopping", date:"29/05/2026", ts:20260529 },
-  { name:"Iguatemi Porto Alegre/RS",       score:70, type:"Loja Shopping", date:"08/06/2026", ts:20260608 },
-  { name:"Pátio Limeira Shopping",         score:70, type:"Loja de Rua",   date:"03/06/2026", ts:20260603 },
-  { name:"Americana",                      score:66, type:"Loja de Rua",   date:"26/05/2026", ts:20260526 },
-  { name:"Shopping Balneário/SC",          score:66, type:"Loja Shopping", date:"12/06/2026", ts:20260612 },
-  { name:"Shopping Continente (São José)", score:63, type:"Loja Shopping", date:"12/06/2026", ts:20260612 },
-  { name:"Shopping Santa Úrsula",          score:59, type:"Loja de Rua",   date:"03/06/2026", ts:20260603 },
-  { name:"Limeira (Rua)",                  score:53, type:"Loja de Rua",   date:"02/06/2026", ts:20260602 },
+  { name:"Matão/SP",                          score:94, type:"Loja de Rua",   date:"08/06/2026", ts:20260608 },
+  { name:"Itapetininga/SP",                   score:94, type:"Loja de Rua",   date:"25/06/2026", ts:20260625 },
+  { name:"Novo Shopping",                     score:90, type:"Loja de Rua",   date:"03/06/2026", ts:20260603 },
+  { name:"Jundiaí/SP",                        score:90, type:"Loja de Rua",   date:"15/06/2026", ts:20260615 },
+  { name:"Neumarkt (Blumenau/SC)",            score:87, type:"Loja de Rua",   date:"11/06/2026", ts:20260611 },
+  { name:"Itu/SP",                            score:87, type:"Loja de Rua",   date:"24/06/2026", ts:20260624 },
+  { name:"Palmas/TO",                         score:87, type:"Loja Shopping", date:"26/06/2026", ts:20260626 },
+  { name:"Porto Velho Shopping/RO",           score:87, type:"Loja Shopping", date:"18/06/2026", ts:20260618 },
+  { name:"Ribeirão Shopping/SP",              score:84, type:"Loja Shopping", date:"13/06/2026", ts:20260613 },
+  { name:"Shopping Jardins Aracajú/SE",       score:84, type:"Loja Shopping", date:"16/06/2026", ts:20260616 },
+  { name:"Shopping Metrópole",                score:84, type:"Loja Shopping", date:"06/07/2026", ts:20260706 },
+  { name:"Mogi das Cruzes/SP",               score:83, type:"Loja Shopping", date:"15/06/2026", ts:20260615 },
+  { name:"Ribeirão Preto Fiusa",              score:83, type:"Loja Shopping", date:"30/06/2026", ts:20260630 },
+  { name:"Ariquemes/RO",                      score:81, type:"Loja de Rua",   date:"25/06/2026", ts:20260625 },
+  { name:"Shopping Center Norte",             score:81, type:"Loja Shopping", date:"06/07/2026", ts:20260706 },
+  { name:"Jaú/SP",                            score:80, type:"Loja Shopping", date:"08/06/2026", ts:20260608 },
+  { name:"Cacoal/RO",                         score:80, type:"Loja de Rua",   date:"27/06/2026", ts:20260627 },
+  { name:"Rio Claro/SP",                      score:80, type:"Loja de Rua",   date:"26/06/2026", ts:20260626 },
+  { name:"Jundiaí Shopping",                 score:77, type:"Loja Shopping", date:"10/06/2026", ts:20260610 },
+  { name:"Garten Shopping (Joinville/SC)",    score:77, type:"Loja Shopping", date:"10/06/2026", ts:20260610 },
+  { name:"Jaboticabal/SP",                    score:77, type:"Loja de Rua",   date:"20/06/2026", ts:20260620 },
+  { name:"Iguatemi Ribeirão Preto/SP",        score:76, type:"Loja Shopping", date:"14/06/2026", ts:20260614 },
+  { name:"Olhos d'Água (RP/SP)",              score:76, type:"Loja de Rua",   date:"21/06/2026", ts:20260621 },
+  { name:"Villa Romana Shopping/SC",          score:76, type:"Loja Shopping", date:"22/06/2026", ts:20260622 },
+  { name:"Super Shopping Osasco",             score:73, type:"Loja de Rua",   date:"02/06/2026", ts:20260602 },
+  { name:"Paulínia/SP",                       score:73, type:"Loja de Rua",   date:"22/06/2026", ts:20260622 },
+  { name:"Anália Franco",                     score:72, type:"Loja Shopping", date:"29/05/2026", ts:20260529 },
+  { name:"Iguatemi Porto Alegre/RS",          score:70, type:"Loja Shopping", date:"08/06/2026", ts:20260608 },
+  { name:"Pátio Limeira Shopping",            score:70, type:"Loja de Rua",   date:"03/06/2026", ts:20260603 },
+  { name:"Shopping Barra Sul/RS",             score:70, type:"Loja Shopping", date:"18/06/2026", ts:20260618 },
+  { name:"Shopping West Plaza",               score:67, type:"Loja Shopping", date:"08/07/2026", ts:20260708 },
+  { name:"Americana",                         score:66, type:"Loja de Rua",   date:"26/05/2026", ts:20260526 },
+  { name:"Shopping Balneário/SC",             score:66, type:"Loja Shopping", date:"12/06/2026", ts:20260612 },
+  { name:"Shopping SP Market",                score:66, type:"Loja Shopping", date:"03/07/2026", ts:20260703 },
+  { name:"Shopping Continente (São José)",    score:63, type:"Loja Shopping", date:"12/06/2026", ts:20260612 },
+  { name:"ParkShopping Canoas/RS",            score:60, type:"Loja Shopping", date:"25/06/2026", ts:20260625 },
+  { name:"Shopping Boulevard (Mogi Guaçu)",   score:60, type:"Loja Shopping", date:"18/06/2026", ts:20260618 },
+  { name:"Shopping Tivoli (Sta. Bárbara)",    score:60, type:"Loja Shopping", date:"10/07/2026", ts:20260710 },
+  { name:"Shopping Santa Úrsula",             score:59, type:"Loja de Rua",   date:"03/06/2026", ts:20260603 },
+  { name:"Praia Grande/SP",                   score:56, type:"Loja de Rua",   date:"24/06/2026", ts:20260624 },
+  { name:"Limeira (Rua)",                     score:53, type:"Loja de Rua",   date:"02/06/2026", ts:20260602 },
+  { name:"Lençóis Paulista/SP",               score:53, type:"Loja de Rua",   date:"19/06/2026", ts:20260619 },
+  { name:"Santos - Shopping Praiamar",        score:53, type:"Loja Shopping", date:"06/07/2026", ts:20260706 },
+  { name:"Shopping São Bernardo Plaza",       score:52, type:"Loja Shopping", date:"07/07/2026", ts:20260707 },
+  { name:"Shopping Piracicaba",               score:46, type:"Loja Shopping", date:"18/06/2026", ts:20260618 },
+  { name:"Piracicaba/SP",                     score:35, type:"Loja de Rua",   date:"19/06/2026", ts:20260619 },
 ];
 
 // Item labels
@@ -377,40 +382,61 @@ const sections = [
 
 // Per-store item conformity
 const storeItems = {
-  "Matão/SP":                       {"2.1":true,"2.2":true,"2.3":true,"2.4":false,"2.5":true,"2.6":true,"2.7":true,"2.8":true,"2.9":true,"2.10":true,"2.11":true,"2.12":true,"3.1":true,"3.2":true,"3.3":false,"3.4":true,"3.5":true,"4.1":true,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Novo Shopping":                  {"2.1":true,"2.2":true,"2.3":true,"2.4":true,"2.5":false,"2.6":true,"2.7":true,"2.8":true,"2.9":true,"2.10":false,"2.11":true,"2.12":true,"3.1":false,"3.2":true,"3.3":true,"3.4":true,"3.5":true,"4.1":true,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Neumarkt (Blumenau/SC)":         {"2.1":true,"2.2":true,"2.3":false,"2.4":false,"2.5":true,"2.6":true,"2.7":false,"2.8":true,"2.9":true,"2.10":true,"2.11":true,"2.12":true,"3.1":true,"3.2":true,"3.3":true,"3.4":true,"3.5":true,"4.1":false,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Ribeirão Shopping/SP":           {"2.1":true,"2.2":true,"2.3":false,"2.4":true,"2.5":false,"2.6":true,"2.7":true,"2.8":false,"2.9":true,"2.10":false,"2.11":true,"2.12":true,"3.1":true,"3.2":true,"3.3":true,"3.4":true,"3.5":true,"4.1":true,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":false},
-  "Shopping Jardins Aracajú/SE":    {"2.1":true,"2.2":true,"2.3":true,"2.4":false,"2.5":false,"2.6":true,"2.7":false,"2.8":false,"2.9":true,"2.10":true,"2.11":true,"2.12":true,"3.1":false,"3.2":true,"3.3":true,"3.4":true,"3.5":true,"4.1":true,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Mogi das Cruzes/SP":             {"2.1":true,"2.2":true,"2.3":false,"2.4":true,"2.5":true,"2.6":true,"2.7":false,"2.8":true,"2.9":true,"2.10":false,"2.11":true,"2.12":false,"3.1":true,"3.2":true,"3.3":true,"3.4":true,"3.5":false,"4.1":true,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Jaú/SP":                         {"2.1":true,"2.2":true,"2.3":true,"2.4":false,"2.5":false,"2.6":true,"2.7":false,"2.8":true,"2.9":true,"2.10":false,"2.11":true,"2.12":false,"3.1":false,"3.2":true,"3.3":true,"3.4":true,"3.5":true,"4.1":true,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Jundiaí Shopping":              {"2.1":true,"2.2":true,"2.3":false,"2.4":false,"2.5":false,"2.6":true,"2.7":false,"2.8":false,"2.9":true,"2.10":false,"2.11":true,"2.12":true,"3.1":false,"3.2":true,"3.3":true,"3.4":true,"3.5":true,"4.1":true,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Garten Shopping (Joinville/SC)": {"2.1":true,"2.2":true,"2.3":false,"2.4":false,"2.5":false,"2.6":true,"2.7":true,"2.8":true,"2.9":true,"2.10":true,"2.11":false,"2.12":false,"3.1":false,"3.2":true,"3.3":true,"3.4":true,"3.5":false,"4.1":true,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Iguatemi Ribeirão Preto/SP":     {"2.1":true,"2.2":true,"2.3":false,"2.4":true,"2.5":true,"2.6":true,"2.7":true,"2.8":false,"2.9":true,"2.10":true,"2.11":true,"2.12":false,"3.1":true,"3.2":true,"3.3":true,"3.4":true,"3.5":false,"4.1":true,"4.2":false,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":false,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":false},
-  "Super Shopping Osasco":          {"2.1":true,"2.2":true,"2.3":false,"2.4":false,"2.5":true,"2.6":true,"2.7":false,"2.8":false,"2.9":true,"2.10":true,"2.11":true,"2.12":false,"3.1":true,"3.2":true,"3.3":false,"3.4":true,"3.5":false,"4.1":true,"4.2":true,"4.3":true,"5.1":false,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Anália Franco":                  {"2.1":true,"2.2":true,"2.3":true,"2.4":true,"2.5":true,"2.6":true,"2.7":false,"2.8":true,"2.9":true,"2.10":true,"2.11":true,"2.12":false,"3.1":false,"3.2":true,"3.3":true,"3.4":true,"3.5":false,"4.1":true,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":false,"5.5":true,"6.1":false,"6.2":true,"6.3":false,"6.4":false},
-  "Iguatemi Porto Alegre/RS":       {"2.1":false,"2.2":true,"2.3":false,"2.4":false,"2.5":false,"2.6":true,"2.7":false,"2.8":false,"2.9":true,"2.10":false,"2.11":true,"2.12":true,"3.1":false,"3.2":true,"3.3":true,"3.4":true,"3.5":true,"4.1":true,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":false,"6.4":true},
-  "Pátio Limeira Shopping":         {"2.1":true,"2.2":true,"2.3":true,"2.4":false,"2.5":false,"2.6":true,"2.7":true,"2.8":true,"2.9":true,"2.10":false,"2.11":true,"2.12":false,"3.1":false,"3.2":true,"3.3":false,"3.4":true,"3.5":true,"4.1":false,"4.2":true,"4.3":true,"5.1":false,"5.2":true,"5.3":true,"5.4":false,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Americana":                      {"2.1":true,"2.2":true,"2.3":false,"2.4":false,"2.5":true,"2.6":true,"2.7":false,"2.8":false,"2.9":true,"2.10":false,"2.11":true,"2.12":false,"3.1":false,"3.2":true,"3.3":false,"3.4":true,"3.5":false,"4.1":true,"4.2":false,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Shopping Balneário/SC":          {"2.1":false,"2.2":false,"2.3":false,"2.4":false,"2.5":true,"2.6":true,"2.7":false,"2.8":false,"2.9":true,"2.10":true,"2.11":true,"2.12":false,"3.1":true,"3.2":true,"3.3":false,"3.4":true,"3.5":false,"4.1":true,"4.2":true,"4.3":false,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":true,"6.4":true},
-  "Shopping Continente (São José)": {"2.1":true,"2.2":true,"2.3":false,"2.4":false,"2.5":false,"2.6":true,"2.7":false,"2.8":false,"2.9":true,"2.10":true,"2.11":true,"2.12":false,"3.1":false,"3.2":true,"3.3":true,"3.4":true,"3.5":false,"4.1":true,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":false,"6.1":true,"6.2":true,"6.3":false,"6.4":false},
-  "Shopping Santa Úrsula":          {"2.1":false,"2.2":false,"2.3":false,"2.4":true,"2.5":false,"2.6":true,"2.7":false,"2.8":false,"2.9":true,"2.10":true,"2.11":true,"2.12":false,"3.1":true,"3.2":false,"3.3":false,"3.4":true,"3.5":true,"4.1":false,"4.2":true,"4.3":true,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":false,"6.2":true,"6.3":true,"6.4":false},
-  "Limeira (Rua)":                  {"2.1":true,"2.2":true,"2.3":false,"2.4":false,"2.5":false,"2.6":false,"2.7":false,"2.8":false,"2.9":false,"2.10":true,"2.11":true,"2.12":false,"3.1":true,"3.2":false,"3.3":false,"3.4":true,"3.5":false,"4.1":true,"4.2":true,"4.3":false,"5.1":true,"5.2":true,"5.3":true,"5.4":true,"5.5":true,"6.1":true,"6.2":true,"6.3":false,"6.4":false},
+  "Matão/SP":                          {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":true, "2.6":true, "2.7":true, "2.8":true, "2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":true, "3.2":true, "3.3":false,"3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Itapetininga/SP":                   {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":true, "2.6":true, "2.7":true, "2.8":true, "2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":true, "3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":false,"6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Novo Shopping":                     {"2.1":true, "2.2":true, "2.3":true, "2.4":true, "2.5":false,"2.6":true, "2.7":true, "2.8":true, "2.9":true, "2.10":false,"2.11":true, "2.12":true, "3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Jundiaí/SP":                        {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":true, "2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":true, "3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Neumarkt (Blumenau/SC)":            {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":true, "2.6":true, "2.7":false,"2.8":true, "2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":true, "3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":false,"4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Itu/SP":                            {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":true, "2.8":true, "2.9":true, "2.10":true, "2.11":true, "2.12":false,"3.1":true, "3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Palmas/TO":                         {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":true, "2.6":true, "2.7":false,"2.8":true, "2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":true, "3.2":false,"3.3":false,"3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Porto Velho Shopping/RO":           {"2.1":true, "2.2":true, "2.3":false,"2.4":true, "2.5":false,"2.6":true, "2.7":true, "2.8":true, "2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":true },
+  "Ribeirão Shopping/SP":              {"2.1":true, "2.2":true, "2.3":false,"2.4":true, "2.5":false,"2.6":true, "2.7":true, "2.8":false,"2.9":true, "2.10":false,"2.11":true, "2.12":true, "3.1":true, "3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":false},
+  "Shopping Jardins Aracajú/SE":       {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Shopping Metrópole":                {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":true, "2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":false},
+  "Mogi das Cruzes/SP":               {"2.1":true, "2.2":true, "2.3":false,"2.4":true, "2.5":true, "2.6":true, "2.7":false,"2.8":true, "2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":true, "3.2":true, "3.3":true, "3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Ribeirão Preto Fiusa":              {"2.1":true, "2.2":true, "2.3":false,"2.4":true, "2.5":false,"2.6":true, "2.7":true, "2.8":true, "2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Ariquemes/RO":                      {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":false,"2.6":true, "2.7":true, "2.8":false,"2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":false,"4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":true },
+  "Shopping Center Norte":             {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":true, "3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":true },
+  "Jaú/SP":                            {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":true, "2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Cacoal/RO":                         {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":false,"2.6":true, "2.7":true, "2.8":true, "2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":false,"6.1":true, "6.2":true, "6.3":false,"6.4":true },
+  "Rio Claro/SP":                      {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":true, "2.6":true, "2.7":false,"2.8":true, "2.9":true, "2.10":true, "2.11":true, "2.12":false,"3.1":true, "3.2":true, "3.3":false,"3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":true },
+  "Jundiaí Shopping":                 {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":false,"2.11":true, "2.12":true, "3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Garten Shopping (Joinville/SC)":    {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":true, "2.8":true, "2.9":true, "2.10":true, "2.11":false,"2.12":false,"3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Jaboticabal/SP":                    {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":true, "2.11":true, "2.12":true, "3.1":false,"3.2":true, "3.3":true, "3.4":false,"3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Iguatemi Ribeirão Preto/SP":        {"2.1":true, "2.2":true, "2.3":false,"2.4":true, "2.5":true, "2.6":true, "2.7":true, "2.8":false,"2.9":true, "2.10":true, "2.11":true, "2.12":false,"3.1":true, "3.2":true, "3.3":true, "3.4":true, "3.5":false,"4.1":true, "4.2":false,"4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":false,"5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":false},
+  "Olhos d'Água (RP/SP)":              {"2.1":false,"2.2":false,"2.3":true, "2.4":true, "2.5":true, "2.6":true, "2.7":true, "2.8":true, "2.9":true, "2.10":false,"2.11":true, "2.12":true, "3.1":true, "3.2":true, "3.3":false,"3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":false,"5.2":true, "5.3":false,"5.4":true, "5.5":false,"6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Villa Romana Shopping/SC":          {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":true, "2.6":true, "2.7":false,"2.8":true, "2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":true, "3.2":true, "3.3":true, "3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":false,"6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Super Shopping Osasco":             {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":true, "2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":true, "2.11":true, "2.12":false,"3.1":true, "3.2":true, "3.3":false,"3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":false,"5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Paulínia/SP":                       {"2.1":true, "2.2":true, "2.3":false,"2.4":true, "2.5":false,"2.6":true, "2.7":false,"2.8":true, "2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":true, "3.3":false,"3.4":true, "3.5":true, "4.1":true, "4.2":false,"4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Anália Franco":                     {"2.1":true, "2.2":true, "2.3":true, "2.4":true, "2.5":true, "2.6":true, "2.7":false,"2.8":true, "2.9":true, "2.10":true, "2.11":true, "2.12":false,"3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":false,"5.5":true, "6.1":false,"6.2":true, "6.3":false,"6.4":false},
+  "Iguatemi Porto Alegre/RS":          {"2.1":false,"2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":false,"2.11":true, "2.12":true, "3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":true },
+  "Pátio Limeira Shopping":            {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":false,"2.6":true, "2.7":true, "2.8":true, "2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":true, "3.3":false,"3.4":true, "3.5":true, "4.1":false,"4.2":true, "4.3":true, "5.1":false,"5.2":true, "5.3":true, "5.4":false,"5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Shopping Barra Sul/RS":             {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":false,"2.11":true, "2.12":true, "3.1":false,"3.2":true, "3.3":true, "3.4":false,"3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":true },
+  "Shopping West Plaza":               {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":true },
+  "Americana":                         {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":true, "2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":true, "3.3":false,"3.4":true, "3.5":false,"4.1":true, "4.2":false,"4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Shopping Balneário/SC":             {"2.1":false,"2.2":false,"2.3":false,"2.4":false,"2.5":true, "2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":true, "2.11":true, "2.12":false,"3.1":true, "3.2":true, "3.3":false,"3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":false,"5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Shopping SP Market":                {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":true, "2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":true, "3.3":false,"3.4":true, "3.5":true, "4.1":true, "4.2":false,"4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":false,"6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Shopping Continente (São José)":    {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":true, "2.11":true, "2.12":false,"3.1":false,"3.2":true, "3.3":true, "3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":false,"6.1":true, "6.2":true, "6.3":false,"6.4":false},
+  "ParkShopping Canoas/RS":            {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":false,"2.7":false,"2.8":false,"2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":false,"3.3":false,"3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":true },
+  "Shopping Boulevard (Mogi Guaçu)":   {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":true, "2.11":true, "2.12":false,"3.1":false,"3.2":true, "3.3":false,"3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":false,"6.1":true, "6.2":true, "6.3":false,"6.4":false},
+  "Shopping Tivoli (Sta. Bárbara)":    {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":false,"2.7":false,"2.8":false,"2.9":false,"2.10":false,"2.11":false,"2.12":true, "3.1":true, "3.2":true, "3.3":false,"3.4":true, "3.5":true, "4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":false},
+  "Shopping Santa Úrsula":             {"2.1":false,"2.2":false,"2.3":false,"2.4":true, "2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":true, "2.11":true, "2.12":false,"3.1":true, "3.2":false,"3.3":false,"3.4":true, "3.5":true, "4.1":false,"4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":false,"6.2":true, "6.3":true, "6.4":false},
+  "Praia Grande/SP":                   {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":false,"3.3":false,"3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":false,"5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":true },
+  "Limeira (Rua)":                     {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":false,"2.7":false,"2.8":false,"2.9":false,"2.10":true, "2.11":true, "2.12":false,"3.1":true, "3.2":false,"3.3":false,"3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":false,"5.1":true, "5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":false},
+  "Lençóis Paulista/SP":               {"2.1":true, "2.2":true, "2.3":true, "2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":false,"2.10":false,"2.11":false,"2.12":true, "3.1":false,"3.2":false,"3.3":false,"3.4":true, "3.5":true, "4.1":true, "4.2":false,"4.3":false,"5.1":false,"5.2":false,"5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Santos - Shopping Praiamar":        {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":true, "2.7":false,"2.8":false,"2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":false,"3.3":false,"3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":false,"5.2":true, "5.3":true, "5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":false},
+  "Shopping São Bernardo Plaza":       {"2.1":false,"2.2":true, "2.3":false,"2.4":false,"2.5":true, "2.6":true, "2.7":false,"2.8":true, "2.9":false,"2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":false,"3.3":false,"3.4":true, "3.5":false,"4.1":true, "4.2":true, "4.3":true, "5.1":true, "5.2":true, "5.3":false,"5.4":true, "5.5":false,"6.1":true, "6.2":true, "6.3":false,"6.4":true },
+  "Shopping Piracicaba":               {"2.1":true, "2.2":true, "2.3":false,"2.4":false,"2.5":false,"2.6":false,"2.7":false,"2.8":false,"2.9":true, "2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":false,"3.3":false,"3.4":true, "3.5":false,"4.1":false,"4.2":false,"4.3":true, "5.1":true, "5.2":false,"5.3":false,"5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":true, "6.4":true },
+  "Piracicaba/SP":                     {"2.1":false,"2.2":false,"2.3":false,"2.4":false,"2.5":false,"2.6":false,"2.7":false,"2.8":false,"2.9":false,"2.10":false,"2.11":true, "2.12":false,"3.1":false,"3.2":false,"3.3":false,"3.4":true, "3.5":true, "4.1":false,"4.2":true, "4.3":true, "5.1":false,"5.2":false,"5.3":false,"5.4":true, "5.5":true, "6.1":true, "6.2":true, "6.3":false,"6.4":true },
 };
 
-// Failing items (calculated from storeItems)
-const failingItems = [
-  { label:"2.8 – Ofereceu itens adicionais",         pct:89 },
-  { label:"2.7 – Apresentou o Cascão",               pct:84 },
-  { label:"2.3 – Saudação 'Bem-vindo à Borelli'",    pct:79 },
-  { label:"2.12 – Despedida 'Bom Borelli' (caixa)",  pct:74 },
-  { label:"2.4 – Programa de fidelidade",            pct:74 },
-  { label:"2.5 – Crachá (caixa)",                    pct:68 },
-  { label:"3.1 – Crachá (vitrine)",                  pct:68 },
-  { label:"3.5 – Despedida 'Bom Borelli' (vitrine)", pct:63 },
-  { label:"6.4 – QR Code pesquisa de satisfação",    pct:53 },
-  { label:"6.3 – Rádio Borelli ligada",              pct:47 },
-];
+// Failing items — calculado dinamicamente a partir de storeItems
+const allItemKeys = ["2.1","2.2","2.3","2.4","2.5","2.6","2.7","2.8","2.9","2.10","2.11","2.12","3.1","3.2","3.3","3.4","3.5","4.1","4.2","4.3","5.1","5.2","5.3","5.4","5.5","6.1","6.2","6.3","6.4"];
+const storeNames = stores.map(s => s.name);
+const failingItems = allItemKeys.map(key => {
+  const failCount = storeNames.filter(n => storeItems[n] && storeItems[n][key] === false).length;
+  return { label:`${key} – ${itemLabels[key]}`, pct: Math.round(failCount / storeNames.length * 100) };
+}).filter(i => i.pct > 0).sort((a,b) => b.pct - a.pct).slice(0, 10);
 
 // ═══════════════════════════════════════════════════════════
 // HELPERS
@@ -533,7 +559,7 @@ const barChart = new Chart(document.getElementById('barChart'), {
 // Donut
 new Chart(document.getElementById('donutChart'),{
   type:'doughnut',
-  data:{labels:['BOM (≥80)','REGULAR (60–79)','RUIM (30–59)','INACEITÁVEL (0–29)'],datasets:[{data:[7,10,2,0],backgroundColor:['#27ae60','#d4a017','#e67e22','#e74c3c'],borderWidth:3,borderColor:'#fff',hoverOffset:10}]},
+  data:{labels:['BOM (≥80)','REGULAR (60–79)','RUIM (30–59)','INACEITÁVEL (0–29)'],datasets:[{data:[18,20,8,0],backgroundColor:['#27ae60','#d4a017','#e67e22','#e74c3c'],borderWidth:3,borderColor:'#fff',hoverOffset:10}]},
   options:{responsive:true,maintainAspectRatio:false,cutout:'66%',plugins:{legend:{display:false},tooltip:{callbacks:{label:ctx=>` ${ctx.label}: ${ctx.parsed} lojas (${Math.round(ctx.parsed/N*100)}%)`}}}}
 });
 
@@ -570,7 +596,7 @@ new Chart(document.getElementById('timeChart'),{
     {label:'Loja de Rua',data:sorted.filter(s=>s.type==='Loja de Rua').map(s=>({x:s.date,y:s.score,name:s.name})),backgroundColor:'#2d6a4f',pointRadius:7,pointHoverRadius:9},
     {label:'Loja Shopping',data:sorted.filter(s=>s.type==='Loja Shopping').map(s=>({x:s.date,y:s.score,name:s.name})),backgroundColor:'#52b788',pointRadius:7,pointHoverRadius:9,pointStyle:'triangle'}
   ]},
-  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{font:{size:11}}},tooltip:{callbacks:{label:ctx=>` ${ctx.raw.name}: ${ctx.raw.y} pts`}}},scales:{y:{min:40,max:100,grid:{color:'#f0f0f0'},ticks:{font:{size:11},callback:v=>v+' pts'},title:{display:true,text:'Nota',font:{size:11}}},x:{type:'category',grid:{display:false},ticks:{font:{size:10},maxRotation:30},title:{display:true,text:'Data da visita',font:{size:11}}}}}
+  options:{responsive:true,maintainAspectRatio:false,plugins:{legend:{display:true,position:'bottom',labels:{font:{size:11}}},tooltip:{callbacks:{label:ctx=>` ${ctx.raw.name}: ${ctx.raw.y} pts`}}},scales:{y:{min:30,max:100,grid:{color:'#f0f0f0'},ticks:{font:{size:11},callback:v=>v+' pts'},title:{display:true,text:'Nota',font:{size:11}}},x:{type:'category',grid:{display:false},ticks:{font:{size:10},maxRotation:30},title:{display:true,text:'Data da visita',font:{size:11}}}}}
 });
 </script>
 </body>
