@@ -220,10 +220,10 @@
       <div class="card-title">Desempenho por Tipo de Unidade</div>
       <div class="chart-wrap" style="height:175px"><canvas id="typeChart"></canvas></div>
       <div class="highlights">
-        <div class="hl-box best"><div class="hl-tag">🥇 Melhores unidades</div><div class="hl-name" style="color:var(--bom)">Matão/SP e Itapetininga/SP</div><div class="hl-sub">Nota 94 · BOM · Loja de Rua</div></div>
-        <div class="hl-box worst"><div class="hl-tag">⚠️ Pior unidade</div><div class="hl-name" style="color:var(--ruim)">Shopping Piracicaba</div><div class="hl-sub">Nota 46 · RUIM · Loja Shopping</div></div>
-        <div class="hl-box best"><div class="hl-tag">🏆 Top Lojas Shopping</div><div class="hl-name" style="color:var(--bom)">Palmas/TO e Porto Velho/RO</div><div class="hl-sub">Nota 87 · BOM · empatadas</div></div>
-        <div class="hl-box worst"><div class="hl-tag">📉 Menor nota — Shopping</div><div class="hl-name" style="color:var(--ruim)">Shopping Piracicaba</div><div class="hl-sub">Nota 46 · RUIM</div></div>
+        <div class="hl-box best"><div class="hl-tag">🥇 Melhores lojas de rua</div><div class="hl-name" style="color:var(--bom)">Matão/SP e Itapetininga/SP</div><div class="hl-sub">Nota 94 · BOM · Loja de Rua</div></div>
+        <div class="hl-box worst"><div class="hl-tag">⚠️ Piores lojas de rua</div><div class="hl-name" style="color:var(--ruim)">Piracicaba/SP</div><div class="hl-sub">Nota 49 · RUIM · Loja de Rua</div></div>
+        <div class="hl-box best"><div class="hl-tag">🏆 Melhores lojas de shopping</div><div class="hl-name" style="color:var(--bom)">Palmas/TO e Porto Velho/RO</div><div class="hl-sub">Nota 87 · BOM · empatadas</div></div>
+        <div class="hl-box worst"><div class="hl-tag">📉 Piores lojas de shopping</div><div class="hl-name" style="color:var(--ruim)">Shopping Piracicaba</div><div class="hl-sub">Nota 46 · RUIM</div></div>
       </div>
     </div>
   </div>
@@ -262,7 +262,28 @@
 
 </div>
 
-<footer>
+<footer style="display:flex;flex-direction:column;align-items:center;gap:12px;padding:24px 16px 20px;">
+  <!-- Tailler logo: fiel ao Grupo HSA — folhas verdes, cúpula laranja→dourado, asas cinzas -->
+  <svg viewBox="0 0 290 140" width="200" height="97" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="tg2" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" stop-color="#cc5200"/>
+        <stop offset="100%" stop-color="#f5b020"/>
+      </linearGradient>
+    </defs>
+    <!-- Folhas verdes apontadas no topo -->
+    <ellipse cx="55" cy="13" rx="5" ry="17" transform="rotate(-20 55 13)" fill="#5a8464"/>
+    <ellipse cx="75" cy="13" rx="5" ry="17" transform="rotate(20 75 13)" fill="#5a8464"/>
+    <!-- Cúpula laranja-dourado (sweep=0 = arco vai pelo TOPO) -->
+    <path d="M8,82 A57,57 0 0 0 122,82" fill="none" stroke="url(#tg2)" stroke-width="36" stroke-linecap="round"/>
+    <!-- Asa cinza esquerda (pétala arredondada) -->
+    <path d="M11,94 C-8,107 -10,132 12,135 C32,138 58,124 65,113 C46,112 15,108 11,94Z" fill="#b0b0b0"/>
+    <!-- Asa cinza direita (espelho) -->
+    <path d="M119,94 C138,107 140,132 118,135 C98,138 72,124 65,113 C84,112 115,108 119,94Z" fill="#b0b0b0"/>
+    <!-- Texto "Tailler" em duas linhas -->
+    <text x="146" y="66" font-family="'Segoe UI',Tahoma,sans-serif" font-size="36" font-weight="300" fill="#2a3528" letter-spacing="-1">Tai</text>
+    <text x="146" y="108" font-family="'Segoe UI',Tahoma,sans-serif" font-size="36" font-weight="300" fill="#2a3528" letter-spacing="-1">ller</text>
+  </svg>
   <span>Dashboard gerado a partir de 46 relatórios de Cliente Oculto — Gelato Borelli &nbsp;|&nbsp; Tailler / Alimentarum &nbsp;|&nbsp; Período: Maio–Julho 2026</span>
 </footer>
 
